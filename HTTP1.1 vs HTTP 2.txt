@@ -1,0 +1,46 @@
+Write a difference between HTTP 1.1 VS HTTP 2.
+
+ANSWER
+
+What is HTTP?
+--HTTP stands for hypertext transfer protocol. It is the foundation for data   communucation of www or World Wide Web.
+--An application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol.
+--HTTP is based on the Client/Server Model. Client/Server model can be explained as two computers,client(reciever of service) and Server (provider of service) that are communicating via Requests and Responses.
+--For example, A Restaurant guest and a waiter. The guest(client) asks (sends request) waiter (server) for a meal,theb the waiter gets the meal from the restaurant chef ( A application logic) and bringd the meal to the guest.
+--There are several stages of development of HTTP, here  we can see the difference between HTTP 1.1 AND HTTP 2.
+
+Difference between HTTP1.1 and HTTP2
+-------------------------------------
+
+HTTP/1.1 and HTTP/2 are both protocols used for communication on the web, but they have several key differences in terms of performance and features:
+
+***HTTP 1.1 ***
+----------------
+
+>>It is the first version of HTTP, used for transferring data over the web.
+>>It works on the textual format,which is human-readable but less efficient in terms of parsing and transmission.
+>>Multiplexing -- uses separate connections for each resource
+>> Header Compression -- Headers are sent as plain text
+>> Sever Push -- Does not support server push.
+>>In HTTP/1.1, resource inlining can help mitigate the overhead of multiple requests, as each request carries its own latency. However, it can also lead to larger HTML file sizes and increased complexity in managing resources.
+>> Prioritization -- Does not suuport explicit prioritization
+>> Binary Protocol -- Since it works on textual format there is no binary protocol
+>>It is widely adopted
+>> It compresses data by itself.
+>>
+
+
+***HTTP/2 ***
+-------------
+
+>> It works on Binary protocol instead of textual that converts all the messages in binary format.
+>>Multiplexing -- allows multiple requests and responses over a single TCP connection.
+>> Header Compression -- Headers are compressed using HPACK
+>> Server Push -- It uses PUSH frame by server that collects all multiple pages.HTTP/2's server push feature allows servers to proactively push resources to clients, further optimizing page load times without relying on inlining.
+>> Prioritization -- Supports stream prioritization
+>> Binary Protocol -- uses binary protocol for more efficient transmission leading to improved performance.
+>> Offers improved performance and efficiency, especially for websites with many resources
+
+
+
+
